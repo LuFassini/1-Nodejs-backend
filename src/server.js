@@ -11,11 +11,11 @@ app.use(express.json()); //faz com que o express entenda o formato json//permite
 
 app.get ("/", (req,res) =>{
     //rota inicial
-    response.status(200).json({mensage: "Hello World"});
+    res.status(200).json({mensage: "Hello World"});
 });
 
 app.listen(port, () => {
     //inicia o servidor
-    console.log(`Servidor iniciado em http://localhost: ${port}`);
+    console.log(`Servidor iniciado em http://localhost:${port}`);
 });
 
