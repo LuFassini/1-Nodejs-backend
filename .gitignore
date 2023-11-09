@@ -1,3 +1,5 @@
+//pastas a serem ignoradas, ou seja, nao aparecerão no git, nao sobe para o repositorio.
+
 .env
 
 node_modules
