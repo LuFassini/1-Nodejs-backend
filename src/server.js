@@ -11,7 +11,22 @@ app.use(express.json()); //faz com que o express entenda o formato json//permite
 
 app.get ("/", (req,res) =>{
     //rota inicial
-    res.status(200).json({mensage: "Hello World"});
+    res.status(200).json({mensage: "Hello GET"});
+});
+
+app.post("/", (req,res) =>{
+    //rota inicial
+    res.status(200).json({mensage: "Hello POST"})
+});
+
+app.put("/", (req,res) =>{
+    //rota inicial
+    res.status(200).json({mensage: "Hello PUT"})
+});
+
+app.delete("/", (req,res) =>{
+    //rota inicial
+    res.status(200).json({mensage: "Hello DELATE"})
 });
 
 app.listen(port, () => {
